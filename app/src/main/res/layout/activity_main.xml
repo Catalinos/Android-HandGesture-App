@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="585dp"
+        android:layout_marginTop="4dp"
+        android:background="#5252ED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="367dp"
+        android:layout_height="452dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/firstpagebackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="61dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="468dp"
+        android:layout_marginEnd="172dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/handicon" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="412dp"
+        android:layout_height="212dp"
+        android:background="#3131AD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="126dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#00FFB5"
+        android:text="Sign Up!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="126dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#00FFB5"
+        android:text="LogIn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="98dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="428dp"
+        android:backgroundTint="#000000"
+        android:fontFamily="serif"
+        android:text="Welcome to "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="198dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#00FFB5"
+        android:fontFamily="serif"
+        android:text="Hand Gesture Database"
+        android:textColor="#00FFB5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

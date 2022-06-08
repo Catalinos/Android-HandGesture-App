@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HandGestureApp</string>
+
+
+    <string-array name="gendersENG">
+        <item>Male</item>
+        <item>Female</item>
+        <item>None</item>
+    </string-array>
+    <string name="title_activity_maps">MapsActivity</string>
+
+
+</resources>

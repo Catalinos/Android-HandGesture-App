@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "303490623010",
+    "project_id": "handgestureappdb",
+    "storage_bucket": "handgestureappdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303490623010:android:09e209b6ae4564b5a74c7b",
+        "android_client_info": {
+          "package_name": "com.example.handgestureapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303490623010-uuu9kcdlep6768ka6pcj7gl8qvirpe7c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFKWv2RN1zCgT3TWyZZ9btvM7eSA0ibqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303490623010-uuu9kcdlep6768ka6pcj7gl8qvirpe7c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainMenuActivity">
+
+    <TextView
+        android:id="@+id/randomText"
+        android:layout_width="273dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="serif"
+        android:text="Please choose one of the activities below"
+        android:textColor="#00FFB5"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="417dp"
+        android:layout_height="706dp"
+        android:layout_marginTop="112dp"
+        android:background="#00FFB5"
+        app:layout_constraintEnd_toStartOf="@+id/textView19"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="113dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="serif"
+        android:text="Welcome, "
+        android:textColor="#00FFB5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="189dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="serif"
+        android:text="Take a Gesture Photo"
+        android:textAllCaps="false"
+        android:textColor="#6a69e2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="189dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="serif"
+        android:text="My Taken Gestures"
+        android:textAllCaps="false"
+        android:textColor="#6a69e2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/takephoto" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="189dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="serif"
+        android:text="See My Gesture Stats"
+        android:textAllCaps="false"
+        android:textColor="#6a69e2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seeImages" />
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="113dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="serif"
+        android:textColor="#00FFB5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backButton"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="28dp"
+        android:clickable="true"
+        android:onClick="goBackToMainMenu"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/handicon" />
+
+    <ImageView
+        android:id="@+id/takephoto"
+        android:layout_width="212dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/black"
+        android:onClick="goTakePhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:srcCompat="@drawable/takephoto" />
+
+    <ImageView
+        android:id="@+id/seeImages"
+        android:layout_width="212dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="72dp"
+        android:onClick="goSeeImages"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        app:srcCompat="@drawable/seephotos" />
+
+    <ImageView
+        android:id="@+id/seeGestureStats"
+        android:layout_width="212dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="84dp"
+        android:onClick="goSeeGestureStats"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:srcCompat="@drawable/seemystats" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFB5"
+    tools:context=".TakePhotoActivity">
+
+    <View
+        android:id="@+id/dataAboutImage"
+        android:layout_width="413dp"
+        android:layout_height="259dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <ImageView
+        android:id="@+id/imageTaken"
+        android:layout_width="280dp"
+        android:layout_height="377dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:foregroundTint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="101dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="152dp"
+        android:backgroundTint="@color/white"
+        android:onClick="takePhotoAction"
+        android:text="Take Photo"
+        android:textColor="#00FFB5"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageTaken" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="123dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="156dp"
+        android:backgroundTint="#00FFB5"
+        android:text="Upload Image"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="uploadImageToDB"
+        app:layout_constraintTop_toBottomOf="@+id/imageTaken" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="137dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Select Gesture Type"
+        android:textColor="#00FFB5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <GridLayout
+        android:layout_width="226dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/upGestureCard"
+            android:layout_width="88dp"
+            android:layout_height="76dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="setUpGesture"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+            <LinearLayout
+                android:layout_width="78dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="52dp"
+                    android:src="@drawable/upgesture" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UP Gest"
+                    android:textColor="#00FFB5"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/downGestureCard"
+            android:layout_width="88dp"
+            android:layout_height="76dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="setDownGesture"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+            <LinearLayout
+                android:layout_width="78dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="52dp"
+                    android:src="@drawable/downgesture" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOWN Gest"
+                    android:textColor="#00FFB5"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/leftGestureCard"
+            android:layout_width="88dp"
+            android:layout_height="76dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="setLeftGesture"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+            <LinearLayout
+                android:layout_width="78dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="52dp"
+                    android:src="@drawable/leftgesture" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LEFT Gest"
+                    android:textColor="#00FFB5"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rightGestureCard"
+            android:layout_width="88dp"
+            android:layout_height="76dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="setRightGesture"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+            <LinearLayout
+                android:layout_width="78dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/rightgesture" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RIGHT Gest"
+                    android:textColor="#00FFB5"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
